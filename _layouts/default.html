@@ -1,10 +1,104 @@
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
+	<meta charset="utf-8">
 	<title>{{ page.title }}</title>
-</head>
-<body>
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The best task app for Type-A personalities">
+    <meta name="keywords" content="Type A personality, organized, productivity, GTD app">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.css">
+    <link rel="stylesheet" href="/assets/css/ionicons.min.css"> <!-- Resource style -->
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar Section -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container container-s">
+          <a class="navbar-brand" href="/">TaskTackler</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right">
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#products">Products</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/blog">Blog</a></li>
+              <li class="nav-item"><a class="btn-cta nav-link js-scroll-trigger" href="#signup">Sign Up</a></li>
+			  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/blog">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav><!-- Navbar End -->
+	  
+	  
 	{{ content }}
 	
+
+    
+
+        <!-- CTA Signup Section -->
+        <div id="signup" class="cta-sm wow fadeIn">
+          <div class="container-m text-center">
+            <div class="cta-content">
+               <h4>GRAB ARRAY FOR BEST PRICE TODAY</h4>
+               <h1>Start now and turn your online business into a profitable route.</h1>
+               <a class="btn-action js-scroll-trigger" href="#main">Register now</a>
+              <div class="form-note">
+                <p>14-day free trial and no credit card required.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Array Footer Section -->
+        <div class="footer-sm">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="footer-logo" href="#">array.</a>
+              </div>
+              <div class="col-md-4">
+                <h6>&copy; IOThemes 2018 Rights Reserved</h6>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+       <!-- Scroll To Top -->
+        <div id="back-top" class="bk-top">
+          <div class="bk-top-txt">
+             <a class="back-to-top js-scroll-trigger" href="#main">top</a>
+          </div>
+        </div>
+       <!-- Scroll To Top Ends-->
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
 	{% include ga.html %}
 </body>
 </html>
