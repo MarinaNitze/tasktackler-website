@@ -143,13 +143,8 @@ body {
 	transition: 0.5s all ease;
 }
 
-.navbar .navbar-brand {
-	font-family: 'Montserrat';
-	font-size: 16px;
-	font-weight: 600;
-	letter-spacing: 0;
-	color: #6d48e5 !important;
-	vertical-align: middle;
+.navbar .tt-logo {
+	height: 51px;
 }
 
 .navbar .navbar-brand img {
@@ -184,15 +179,14 @@ body {
 .navbar-nav .nav-item {
 	margin-right: 0;
 	margin-top: 1.5rem;
-	font-size: 0.85rem;
-	font-weight: 400;
+	font-size: 1.3125rem;
   text-transform: capitalize;
   color: #563D7C;
 }
 
 .navbar-nav .nav-item .nav-link {
   color: #364655;
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .nav-white .nav-item .nav-link {
@@ -217,6 +211,10 @@ body {
 		/*background: rgba(255, 255, 255, 0.99) !important;*/
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+	
+	.navbar .tt-logo {
+		height: 31px;
 	}
 
 	.navbar .navbar-nav {
@@ -429,10 +427,178 @@ body {
 }
 
 /*------------------------------------------------
-------------- Hero Version 2 Styling -------------
+------------- Button Styling -------------
 -------------------------------------------------*/
 
+.tt-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #6D48E5;
+  padding: 0.75rem 1.75rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 0.3125rem;
+  position: relative;
+  font-size: 0.875rem;
+}
 
+.tt-btn:hover {
+  text-decoration: none;
+  background: #3E19B6;
+  font-family: Montserrat;
+  color: #fff;
+}
+
+.tt-btn-todo {
+  display: inline-flex;
+  float: left;
+  align-items: center;
+  padding-left: 1rem !important;
+}
+
+.tt-btn-todo span {
+  height: 1.25rem;
+  width: 1.25rem;
+  background: #fff;
+  display: block;
+  margin-right: 0.75rem;
+  position: relative;
+}
+
+.tt-btn-todo--square span:before {
+  content: ' ';
+  height: 0.85rem;
+  width: 0.5rem;
+  border-bottom: 3px solid #6D48E5;
+  border-right: 3px solid #6D48E5;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 0.35rem;
+  top: 0.125rem;
+  opacity: 0;
+}
+
+.tt-btn-todo:hover span:before {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 767px) {
+  .tt-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/*------------------------------------------------
+------------- Block Styling -------------
+-------------------------------------------------*/
+
+.tt-main {
+  margin-top: 100px;
+}
+
+.tt-block {
+  padding: 50px 0;
+}
+
+.tt-block--hero {
+  background-image: url(/assets/images/circles-hero.png);
+  background-repeat: no-repeat;
+  background-position: right 125%;
+  background-size: 50%;
+  position: relative;
+}
+
+/*------------------------------------------------
+------------- Hero Styling -------------
+-------------------------------------------------*/
+
+.tt-hero {
+  display: flex;
+  align-items: center;
+}
+
+.tt-hero h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.tt-hero p {
+  font-size: 1rem;
+}
+
+.tt-hero-cta {
+  margin-top: 2.5rem;
+}
+
+.tt-hero-screen img {
+  max-width: 240px;
+  margin: 2rem 0 0;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 767px) {
+  .tt-hero h1 {
+    font-size: 3.375rem;
+  }
+  
+  .tt-hero p {
+    font-size: 1.5rem;
+  }
+  
+  .tt-hero-screen img {
+    margin: 0 auto;
+    max-width: 342px;
+    width: 100%;
+  }
+  
+  .tt-block--hero {
+    background-position: right 0%;
+    background-size: 50%;
+  }
+  
+  .tt-hero-screen {
+    text-align: center;
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .tt-block--hero:after {
+    position: absolute;
+    content: ' ';
+    right: 0;
+    top: 55%;
+    height: 55%;
+    width: 45%;
+    background-image: url(/assets/images/check-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 150% top;
+    background-size: auto 100%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .tt-hero h1 {
+    font-size: 4.375rem;
+  }
+  
+  .tt-block--hero:after {
+    right: -10px;
+    top: 45%;
+    height: 80%;
+    width: 35%;
+    background-size: contain;
+  }
+}
+
+/*------------------------------------------------
+------------- Hero Version 2 Styling -------------
+-------------------------------------------------*/
 
 .hero-2 {
 	text-align: center;
