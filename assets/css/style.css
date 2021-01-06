@@ -499,7 +499,7 @@ body {
 }
 
 .tt-block {
-  padding: 50px 0;
+  padding: 5rem 0;
 }
 
 .tt-block--hero {
@@ -508,6 +508,75 @@ body {
   background-position: right 125%;
   background-size: 50%;
   position: relative;
+}
+
+.tt-block-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.tt-block-header img {
+  margin-right: 1rem;
+}
+
+.tt-block-header h2 {
+  color: #592ADF;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.tt-block-header p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.tt-block--features {
+  background: #F6F6FD;
+}
+
+/*------------------------------------------------
+------------- Features Styling -------------
+-------------------------------------------------*/
+
+.tt-features {
+  font-family: Montserrat;
+  padding: 0 1rem;
+}
+
+.tt-features .col-12 {
+  margin-bottom: 2rem;
+}
+
+.tt-features-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #00ABFC;
+  width: 3.75rem;
+  height: 3.5rem;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+.tt-features-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.tt-features-text {
+  color: #37374B;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+@media only screen and (min-width: 767px) {
+  .tt-features-title {
+    margin-top: 0;
+  }
 }
 
 /*------------------------------------------------
