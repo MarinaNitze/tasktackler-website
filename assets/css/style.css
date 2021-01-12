@@ -441,6 +441,7 @@ body {
   border-radius: 0.3125rem;
   position: relative;
   font-size: 0.875rem;
+	border: 2px solid #6D48E5;
 }
 
 .tt-btn:hover {
@@ -479,8 +480,32 @@ body {
   opacity: 0;
 }
 
+.tt-btn-todo--round span {
+	border-radius: 100%;
+	border: 2px solid #6D48E5;
+}
+
+.tt-btn-todo--round span:before {
+	content: ' ';
+	height: 0.6rem;
+	width: 0.6rem;
+	background-color: #3FA9F5;
+	position: absolute;
+	margin: -0.3rem 0 0 -0.3rem;
+	left: 50%;
+	top: 50%;
+	opacity: 0;
+	border-radius: 50%;
+}
+
 .tt-btn-todo:hover span:before {
   opacity: 1;
+}
+
+.tt-btn-todo--secondary {
+	background: #ffffff;
+	border: 2px solid #6D48E5;
+	color: #6D48E5;
 }
 
 @media only screen and (min-width: 767px) {
@@ -516,6 +541,10 @@ body {
   margin-bottom: 4rem;
 }
 
+.tt-block-header--trim {
+	max-width: 50rem;
+}
+
 .tt-block-header img {
   margin-right: 1rem;
 }
@@ -529,11 +558,192 @@ body {
 
 .tt-block-header p {
   font-size: 1.5rem;
+	line-height: 1.2;
   font-weight: 500;
 }
 
 .tt-block--features {
   background: #F6F6FD;
+}
+
+.tt-block--reviews {
+	background: #F6F6FD;
+}
+
+.tt-block--pricing .tt-block-header {
+	margin-bottom: 1rem;
+}
+
+.tt-block--pricing .tt-block-header,
+.tt-block--reviews .tt-block-header {
+	align-items: center;
+}
+
+.tt-block--pricing .tt-block-header h2,
+.tt-block--reviews .tt-block-header h2 {
+	color: #000;
+}
+
+/*------------------------------------------------
+------------- Pricing Styling -------------
+-------------------------------------------------*/
+
+.tt-pricing {
+	padding: 0 6rem;
+}
+
+.tt-pricing-content,
+.tt-pricing-content p,
+.tt-pricing-content ul {
+	font-family: Montserrat, sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	margin-bottom: 1.25rem;
+}
+
+.tt-pricing-content li {
+	display: flex;
+	align-items: center;
+}
+
+.tt-pricing-content li span {
+	height: 1.25rem;
+	width: 1.25rem;
+	background: #3FA9F5;
+	display: block;
+	margin-right: 0.75rem;
+	position: relative;
+}
+
+.tt-pricing-content li span:before {
+	content: ' ';
+	height: 0.85rem;
+	width: 0.5rem;
+	border-bottom: 3px solid #fff;
+	border-right: 3px solid #fff;
+	position: absolute;
+	transform: rotate(45deg);
+	left: 0.35rem;
+	top: 0.125rem;
+}
+
+.tt-pricing-options {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.tt-pricing .tt-btn {
+	margin: 1rem 1rem 0;
+	text-align: center;
+}
+
+
+/*------------------------------------------------
+------------- Reviews Styling -------------
+-------------------------------------------------*/
+
+.tt-reviews {
+	padding: 0 6rem;
+}
+
+.tt-reviews-break {
+	border: none;
+	border-top: 1px solid #7441EE;
+	overflow: visible;
+	text-align: center;
+	height: 5px;
+	margin-bottom: 61px;
+}
+
+.tt-reviews-break img {
+	background: #F6F6FD;
+	content: url('/assets/images/icons/purple/beep.svg');
+	padding: 0 4px;
+	position: relative;
+	top: -21px;
+	height: 41px;
+	z-index: 10;
+}
+
+.tt-review-copy {
+	font-size: 2rem;
+	line-height: 1.3;
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 1.5rem;
+}
+
+.tt-review-credit {
+	font-family: Montserrat, sans-serif;
+	font-size: 1.25rem;
+	padding: 0 1rem;
+}
+
+.tt-reviews .owl-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+
+.tt-reviews .owl-dot {
+	margin: 0 0.5rem;
+}
+
+.tt-reviews .owl-dot span {
+	display: block;
+	height: 25px;
+	width: 25px;
+	background: #C4C4C4;
+	border-radius: 0.5rem;
+}
+
+.tt-reviews .owl-dot.active span {
+	background: #3FA9F5;
+}
+
+/*------------------------------------------------
+------------- Product Styling -------------
+-------------------------------------------------*/
+
+.tt-product {
+	margin-bottom: 4rem;
+}
+
+.tt-product a {
+	color: #2D7ABB;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.tt-product-image {
+	margin-bottom: 2rem;
+}
+
+.tt-product-image img {
+	height: 200px;
+	max-width: 100%;
+	object-fit: contain;
+	border-radius: 20px;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);\
+}
+
+.tt-product-details {
+	font-family: Montserrat;
+	font-size: 1.25rem;
+	line-height: 1.4;
+}
+
+.tt-product-title {
+	font-size: 1.625rem;
+	margin-bottom: 0.75rem;
+}
+
+.tt-product-description {
+	margin-bottom: 0.75rem;
+	max-width: 85%;
 }
 
 /*------------------------------------------------
@@ -542,7 +752,6 @@ body {
 
 .tt-features {
   font-family: Montserrat;
-  padding: 0 1rem;
 }
 
 .tt-features .col-12 {

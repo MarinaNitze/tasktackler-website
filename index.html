@@ -27,7 +27,9 @@ title: "TaskTackler: The Task App for the Detail-Oriented"
         <div class="tt-block tt-block--features wow fadeInDown"><!-- Features Section-->
         <div class="container container-xl">
           <div class="tt-block-header">
-            <img src="/assets/images/check.svg" />
+            <div>
+              <img src="/assets/images/check.svg" />
+            </div>
             <div>
               <h2>Key Features</h2>
               <p>The best task management app for the detail-oriented. </p>
@@ -91,264 +93,125 @@ title: "TaskTackler: The Task App for the Detail-Oriented"
           </div>
         </div>
       </div><!-- Features End -->
-
-        <!-- Features Section -->
-        <div id="features" class="flex-split wow fadeIn">
-           <div class="container-s">
-             <div class="flex-intro align-center">
-               <h2>Achieve maximum productivity</h2>
-               <p>TaskTackler works by capturing everything on your plate, and optimizing the flow for you to get the most done based on your priorities and even your current mood.</p>
-             </div>
-             <div class="flex-inner align-center">
-                 <div class="f-image">
-                   <img class="img-fluid" src="assets/images/feature.png" alt="Feature">
-                 </div>
-                 <div class="f-text">
-                   <div class="left-content">
-                     <h2>Set your themes.</h2>
-                     <p> Capture tasks across every facet of your life - your career, your family, and your personal life.</p>
-                     <a href="#">Learn more</a>
-                   </div>
-                 </div>
-             </div>
-
-             <div class="flex-inner flex-inverted align-center">
-               <div class="f-image f-image-inverted">
-                 <img class="img-fluid" src="assets/images/feature.png" alt="Feature">
-               </div>
-               <div class="f-text">
-                 <div class="left-content">
-                   <h2>Set your targets.</h2>
-                   <p> What do you want to accomplish? Assign every task to a target, and TaskTackler will always serve you up the most important thing to work on.</p>
-                   <a href="#">Learn more</a>
-                 </div>
-               </div>
-             </div>
-			 
-			 
-	         <div class="flex-inner align-center">
-	             <div class="f-image">
-	               <img class="img-fluid" src="assets/images/feature.png" alt="Feature">
-	             </div>
-	             <div class="f-text">
-	               <div class="left-content">
-	                 <h2>Optimize tasks for your mood.</h2>
-	                 <p>Indicate the best temperament for completing each task. Stop wasting your best hours folding laundry, and still find ways to be productive even on your laziest nights.</p>
-	                 <a href="#">Learn more</a>
-	               </div>
-	             </div>
-	         </div>
-			 
-            
-			 <div class="flex-inner flex-inverted align-center">
-               <div class="f-image f-image-inverted">
-                 <img class="img-fluid" src="assets/images/feature.png" alt="Feature">
-               </div>
-               <div class="f-text">
-                 <div class="left-content">
-                   <h2>Add relevant task details.</h2>
-                   <p> Indicate task types (e.g. brainstorming, reading, writing), necessary tools, and other details to make achieving flow state a breeze.</p>
-                   <a href="#">Learn more</a>
-                 </div>
-               </div>
-             </div>
-			 
-			 
-           </div>
-         </div>
-		 
-		 
-        
-		 
-		 
-
-
-         <div class="yd-ft wow fadeIn">
-           <div class="yd-ft-inner">
-             <div class="yd-ft-left">
-               <h2>Keep optimizing</h2>
-                   <p>Subscribe to the TaskTackler blog for best practices on using the app, and productivity in general.</p>
-               <a href="#" class="btn-action btn-edge">Visit the blog</a>
-             </div>
-             <div class="yd-ft-right">
-               <img src="assets/images/test.png" alt="Feature">
-             </div>
-           </div>
-         </div>
-
-       
-	   <!-- 
-		   <div class="ar-ft-single">
-          <div class="container-m">
-			  <h2>Your plan includes:</h2>
-            <div class="ar-feature">
-              <div class="ar-list">
-                <ul>
-                  <li>
-                    <div class="ar-icon">
-                      <img src="assets/icons/f1.png" width="30" alt="Icon">
-                    </div>
-                    <div class="ar-text">
-                      <h3>Unlimited tasks</h3>
-                      <p>No limit to the number of targets or tasks.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="ar-icon">
-                      <img src="assets/icons/f4.png" width="30" alt="Icon">
-                    </div>
-                    <div class="ar-text">
-                      <h3>Annual Discount</h3>
-                      <p>Save 10% when you sign up for a year.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="ar-icon">
-                      <img src="assets/icons/f11.png" width="30" alt="Icon">
-                    </div>
-                    <div class="ar-text">
-                      <h3>Community</h3>
-                      <p>Join a community of other Type-As optimizing their life on our blog!</p>
-                    </div>
-                  </li>
-                </ul>
+      
+      <div class="tt-block tt-block--product wow fadeInDown"><!-- Product Section-->
+        <div class="container container-xl">
+          <div class="tt-block-header">
+            <div>
+              <img src="/assets/images/check.svg" />
+            </div>
+            <div class="tt-block-header--trim">
+              <h2>Achieve maximum productivity</h2>
+              <p>TaskTackler works by capturing everything on your plate, and optimizing the flow for you to get the most done based on your priorities and even your current mood.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              {% include 
+                product.html
+                image="assets/images/sample.png"
+                title="Set your themes."
+                description="Capture tasks across every facet of your life - your career, your family, and your personal life."
+                cta_text="Check out our themes"
+                cta_url="#"
+              %}
+            </div>
+            <div class="col-12 col-md-6">
+              {% include 
+                product.html
+                image="assets/images/sample.png"
+                title="Set your targets."
+                description="What do you want to accomplish? Assign every task to a target, and TaskTackler will always serve you up the most important thing to work on."
+                cta_text="Get your targets locked"
+                cta_url="#"
+              %}
+            </div>
+            <div class="col-12 col-md-6">
+              {% include 
+                product.html
+                image="assets/images/sample.png"
+                title="Optimize your mood."
+                description="Indicate the best temperament for completing each task. Stop wasting your best hours folding laundry, and still find ways to be productive even on your laziest nights."
+                cta_text="Set the mood ... for tasks!"
+                cta_url="#"
+              %}
+            </div>
+            <div class="col-12 col-md-6">
+              {% include 
+                product.html
+                image="assets/images/sample.png"
+                title="Add relevant task details."
+                description="Indicate task types (e.g. brainstorming, reading, writing), necessary tools, and other details to make achieving flow state a breeze."
+                cta_text="Start working toward your flow"
+                cta_url="#"
+              %}
+            </div>
+          </div>
+        </div>
+      </div><!-- Product End -->
+      
+      
+      <div class="tt-block tt-block--reviews wow fadeInDown"><!-- Reviews Section-->
+        <div class="container container-xl">
+          <div class="tt-block-header">
+            <div>
+              <img src="/assets/images/check.svg" />
+            </div>
+            <div class="tt-block-header--trim">
+              <h2>Our customers say the nicest things</h2>
+            </div>
+          </div>
+          <div class="tt-reviews">
+            <div class="tt-reviews-break" role="presentation">
+              <img src="/assets/images/icons/purple/beep.svg" aria-role="presentation" />
+            </div>
+            <div class="tt-reviews-list owl-carousel">
+              <div class="tt-review">
+                <div class="tt-review-copy">We have very fair pricing policy that would benefit you and us at the same time. Choose what price you're willing to pay. Get the free plan & if you need more - pay.</div>
+                <div class="tt-review-credit">— Albert Rossi</div>
               </div>
-              <div class="ar-image">
-                <img class="ar-img img-fluid" src="assets/images/feature-2.png" alt="Hero Image">
+              <div class="tt-review">
+                <div class="tt-review-copy">We have very fair pricing policy that would benefit you and us at the same time. Choose what price you're willing to pay. Get the free plan & if you need more - pay.</div>
+                <div class="tt-review-credit">— Albert Rossi</div>
+              </div>
+              <div class="tt-review">
+                <div class="tt-review-copy">We have very fair pricing policy that would benefit you and us at the same time. Choose what price you're willing to pay. Get the free plan & if you need more - pay.</div>
+                <div class="tt-review-credit">— Albert Rossi</div>
+              </div>
+              <div class="tt-review">
+                <div class="tt-review-copy">We have very fair pricing policy that would benefit you and us at the same time. Choose what price you're willing to pay. Get the free plan & if you need more - pay.</div>
+                <div class="tt-review-credit">— Albert Rossi</div>
               </div>
             </div>
           </div>
         </div>
-	-->
+      </div><!-- Reviews End -->
 
 
-         <div id="reviews" class="yd-reviews wow fadeIn"><!-- Array Reviews -->
-           <div class="container">
-             <div class="row text-center">
-               <div class="col-sm-12 col-lg-8 offset-lg-2">
-                 <div class="intro wow fadeIn">
-                   <h1>Customers say nice things</h1>
-                   <p>We have  very fair pricing policy that would benefit you and us at the same time.
-                      Get the free plan &amp; if you need more - pay.
-                   </p>
-                 </div>
-               </div>
-
-               <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
-                 <div class="review-cards owl-carousel owl-theme">
-                   <div class="card-single">
-                     <div class="review-text">
-                       <h1>"We have very fair pricing policy that would benefit you and us at the same time.
-                         Choose what price you're willing to pay. Get the free plan & if you need more - pay."
-                       </h1>
-                     </div>
-                     <div class="review-attribution">
-                       <div class="review-img">
-                         <img class="img-fluid rounded-circle" src="assets/icons/review-1.png" alt="Review">
-                       </div>
-                       <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                      <i class="ion ion-ios-star-half"></i>
-                       <h2> Albert Rossi</h2>
-                       <h6>Stack Developer</h6>
-                       <a href="#">Dropboxes Inc</a>
-                     </div>
-                   </div>
-                   <div class="card-single">
-                     <div class="review-text">
-                       <h1>"We have very fair pricing policy that would benefit you and us at the same time.
-                         Choose what price you're willing to pay. Get the free plan & if you need more - pay."
-                       </h1>
-                     </div>
-                     <div class="review-attribution">
-                       <div class="review-img">
-                         <img class="img-fluid rounded-circle" src="assets/icons/review-2.png" alt="Review">
-                       </div>
-                       <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                      <i class="ion ion-ios-star-half"></i>
-                       <h2> Melissa Vanbergh</h2>
-                       <h6>Vice President</h6>
-                       <a href="#">Vestor Corp</a>
-                     </div>
-                   </div>
-                   <div class="card-single">
-                     <div class="review-text">
-                       <h1>"We have very fair pricing policy that would benefit you and us at the same time.
-                         Choose what price you're willing to pay. Get the free plan & if you need more - pay."
-                       </h1>
-                     </div>
-                     <div class="review-attribution">
-                       <div class="review-img">
-                         <img class="img-fluid rounded-circle" src="assets/icons/review-3.png" alt="Review">
-                       </div>
-                       <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                      <i class="ion ion-star"></i>
-                       <h2> Joshua Peterson</h2>
-                       <h6>Product Developer</h6>
-                       <a href="#">Betabet Inc</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-         <!-- Array Reviews Ends -->
-
-
-        <!-- Array Pricing Section -->
-        <div id="pricing" class="pricing-section text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="pricing-intro wow fadeInDown">
-                  <h1>Get Started Today</h1>
-                  <p>
-                    TaskTackler is designed to help people like you achieve maximum productivity with limited friction.
-                  </p>
-                </div>
-                <div class="row">
-                  <div class="col-lg-4 offset-lg-2 col-md-6">
-                   <div class="table-left wow fadeInDown">
-                     <div class="pricing-details">
-                       <h2>Monthly</h2>
-                       <img src="assets/icons/free.png" width="60" alt="Icon">
-
-                       <span>$10/mo</span>
-                          <ul>
-                           <li>Unlimited targets </li>
-                           <li>Unlimited tasks</li>
-                           </ul>
-                         <button class="btn-action">Sign Up</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="table-right wow fadeInDown">
-                      <div class="pricing-details">
-                         <h2>Annual</h2>
-                         <img src="assets/icons/paid.png" width="60" alt="Icon">
-                         <span>$100/yr</span>
-                         <ul>
-                           <li>Unlimited targets </li>
-                           <li>Unlimited tasks</li>
-                         </ul>
-                         <button class="btn-action">Sign Up</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="tt-block tt-block--pricing wow fadeInDown"><!-- Pricing Section-->
+        <div class="container container-xl">
+          <div class="tt-block-header">
+            <div>
+              <img src="/assets/images/check.svg" />
+            </div>
+            <div class="tt-block-header--trim">
+              <h2>Start tackling your tasks today</h2>
+            </div>
+          </div>
+          <div class="tt-pricing">
+            <div class="tt-pricing-content">
+              <p>Go with a $10 monthly plan, or save $20 with an annual plan. Either way, you get full access to our suite of tools, including</p>
+              <ul>
+                <li><span></span> Unlimited targets</li>
+                <li><span></span> Unlimited tasks</li>
+              </ul>
+              <p><strong>Let’s get to it! Check your first box today by choosing the right plan for you.</strong></p>
+            </div>
+            <div class="tt-pricing-options">
+              <a href="" class="tt-btn tt-btn--big tt-btn-todo tt-btn-todo--round tt-btn-todo--secondary"><span></span> I&nbsp;want&nbsp;the&nbsp;Monthly&nbsp;Plan<br />at&nbsp;$10&nbsp;a&nbsp;month</a>
+              <a href="" class="tt-btn tt-btn--big tt-btn-todo tt-btn-todo--round"><span></span> I&nbsp;want&nbsp;the&nbsp;Annual&nbsp;Plan<br />at&nbsp;$100&nbsp;a&nbsp;year</a>
             </div>
           </div>
         </div>
-        <!-- Array Pricing Ends -->
+      </div><!-- Pricing End -->
 	   
