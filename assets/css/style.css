@@ -527,6 +527,10 @@ body {
   padding: 5rem 0;
 }
 
+.tt-block--blog {
+	background: linear-gradient(180deg, #0029FF -8.23%, rgba(255, 255, 255, 0) 100%), #00ABFC;
+}
+
 .tt-block--hero {
   background-image: url(/assets/images/circles-hero.png);
   background-repeat: no-repeat;
@@ -560,6 +564,7 @@ body {
   font-size: 1.5rem;
 	line-height: 1.2;
   font-weight: 500;
+	margin-top: 1rem;
 }
 
 .tt-block--features {
@@ -582,6 +587,90 @@ body {
 .tt-block--pricing .tt-block-header h2,
 .tt-block--reviews .tt-block-header h2 {
 	color: #000;
+}
+
+/*------------------------------------------------
+------------- Blog Block Styling -------------
+-------------------------------------------------*/
+
+.tt-block--blog h2,
+.tt-block--blog p {
+	color: #ffffff;
+}
+
+.tt-blog-promo {
+	display: flex;
+}
+
+.tt-blog-promo-content .tt-block-header--trim {
+	max-width: 75%;
+}
+
+.tt-blog-promo-image {
+	display: none;
+}
+
+.tt-blog-cta {
+	margin-top: 1rem;
+}
+
+.tt-blog-posts {
+	color: #fff;
+	padding-top: 1rem;
+}
+
+.tt-post-item {
+	margin-top: 1rem;
+	padding: 1rem;
+	background: #fff;
+	border-radius: 0.75rem;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);=
+}
+
+.tt-blog-posts h3 {
+	font-size: 1.625rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.tt-post-image {
+	margin-bottom: 1rem;
+}
+
+.tt-post-title {
+	font-size: 1.625rem;
+	line-height: 1.1;
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 1.25rem;
+}
+
+.tt-post-image img {
+	width: 100%;
+	height: 11.25rem;
+	object-fit: cover;
+	border-radius: 0.5rem;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tt-post-tags {
+	font-size: 1rem;
+	line-height: 1.1;
+	font-family: Montserrat, sans-serif;
+	color: #000;
+}
+
+.tt-post-tags a {
+	color: #000;
+}
+
+@media only screen and (min-width: 1024px) {
+	.tt-blog-promo-image {
+		display: block;
+	}
+	
+	.tt-blog-posts {
+		padding: 0 6rem;
+	}
 }
 
 /*------------------------------------------------
