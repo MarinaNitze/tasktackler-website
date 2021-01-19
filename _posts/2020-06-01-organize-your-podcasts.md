@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "How to Organize Your Podcasts"
+title: "How to Organize Your Podcasts 1"
 description: "This is how to organize your podcasts."
 date: 2020-06-30
 author: Matthew Crist
 featured_image: yeah.jpg
-featured_image_alt: Test Photo
+featured_image_caption: 'Test Photo <a href="#">Test link</a>'
 tags: podcast organization
+featured: true
 ---
 
 **The lede (if there is one)**. Consectetur adipiscing elit. Rutrum velit varius integer ultrices molestie. Feugiat vitae magna erat viverra sit mauris pellentesque. Proin enim sit fusce diam faucibus massa nulla turpis tortor. Posuere diam rutrum fusce cursus.
