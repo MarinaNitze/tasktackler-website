@@ -53,7 +53,7 @@ jQuery(function($) {
 
     /*-------- Owl Carousel ---------- */
 
-      $(".review-cards").owlCarousel({
+      $(".tt-reviews-list").owlCarousel({
         slideSpeed: 200,
         items: 1,
         singleItem: true,

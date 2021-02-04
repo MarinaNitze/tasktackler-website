@@ -143,13 +143,8 @@ body {
 	transition: 0.5s all ease;
 }
 
-.navbar .navbar-brand {
-	font-family: 'Montserrat';
-	font-size: 16px;
-	font-weight: 600;
-	letter-spacing: 0;
-	color: #6d48e5 !important;
-	vertical-align: middle;
+.navbar .tt-logo {
+	height: 51px;
 }
 
 .navbar .navbar-brand img {
@@ -184,15 +179,14 @@ body {
 .navbar-nav .nav-item {
 	margin-right: 0;
 	margin-top: 1.5rem;
-	font-size: 0.85rem;
-	font-weight: 400;
+	font-size: 1.3125rem;
   text-transform: capitalize;
   color: #563D7C;
 }
 
 .navbar-nav .nav-item .nav-link {
   color: #364655;
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .nav-white .nav-item .nav-link {
@@ -217,6 +211,10 @@ body {
 		/*background: rgba(255, 255, 255, 0.99) !important;*/
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+	
+	.navbar .tt-logo {
+		height: 31px;
 	}
 
 	.navbar .navbar-nav {
@@ -429,10 +427,726 @@ body {
 }
 
 /*------------------------------------------------
-------------- Hero Version 2 Styling -------------
+------------- Button Styling -------------
 -------------------------------------------------*/
 
+.tt-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #6D48E5;
+  padding: 0.75rem 1.75rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 0.3125rem;
+  position: relative;
+  font-size: 0.875rem;
+	border: 2px solid #6D48E5;
+}
 
+.tt-btn:hover {
+  text-decoration: none;
+  background: #3E19B6;
+  font-family: Montserrat;
+  color: #fff;
+}
+
+.tt-btn-todo {
+  display: inline-flex;
+  float: left;
+  align-items: center;
+  padding-left: 1rem !important;
+}
+
+.tt-btn-todo span {
+  height: 1.25rem;
+  width: 1.25rem;
+  background: #fff;
+  display: block;
+  margin-right: 0.75rem;
+  position: relative;
+}
+
+.tt-btn-todo--square span:before {
+  content: ' ';
+  height: 0.85rem;
+  width: 0.5rem;
+  border-bottom: 3px solid #6D48E5;
+  border-right: 3px solid #6D48E5;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 0.35rem;
+  top: 0.125rem;
+  opacity: 0;
+}
+
+.tt-btn-todo--round span {
+	border-radius: 100%;
+	border: 2px solid #6D48E5;
+}
+
+.tt-btn-todo--round span:before {
+	content: ' ';
+	height: 0.6rem;
+	width: 0.6rem;
+	background-color: #3FA9F5;
+	position: absolute;
+	margin: -0.3rem 0 0 -0.3rem;
+	left: 50%;
+	top: 50%;
+	opacity: 0;
+	border-radius: 50%;
+}
+
+.tt-btn-todo:hover span:before {
+  opacity: 1;
+}
+
+.tt-btn-todo--secondary {
+	background: #ffffff;
+	border: 2px solid #6D48E5;
+	color: #6D48E5;
+}
+
+@media only screen and (min-width: 767px) {
+  .tt-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/*------------------------------------------------
+------------- Block Styling -------------
+-------------------------------------------------*/
+
+.tt-main {
+  margin-top: 100px;
+}
+
+.tt-block {
+  padding: 5rem 0;
+}
+
+.tt-block--blog {
+	background: linear-gradient(180deg, #0029FF -8.23%, rgba(255, 255, 255, 0) 100%), #00ABFC;
+}
+
+.tt-block--hero {
+  background-image: url(/assets/images/circles-hero.png);
+  background-repeat: no-repeat;
+  background-position: right 125%;
+  background-size: 50%;
+  position: relative;
+}
+
+.tt-block-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.tt-block-header--trim {
+	max-width: 50rem;
+}
+
+.tt-block-header img {
+  margin-right: 1rem;
+}
+
+.tt-block-header h2 {
+  color: #592ADF;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.tt-block-header p {
+  font-size: 1.5rem;
+	line-height: 1.2;
+  font-weight: 500;
+	margin-top: 1rem;
+}
+
+.tt-block--features {
+  background: #F6F6FD;
+}
+
+.tt-block--reviews {
+	background: #F6F6FD;
+}
+
+.tt-block--pricing .tt-block-header {
+	margin-bottom: 1rem;
+}
+
+.tt-block--pricing .tt-block-header,
+.tt-block--reviews .tt-block-header {
+	align-items: center;
+}
+
+.tt-block--pricing .tt-block-header h2,
+.tt-block--reviews .tt-block-header h2 {
+	color: #000;
+}
+
+.tt-block--featured .tt-block-header {
+	margin-bottom: 2rem;
+	align-items: center;
+}
+
+/*------------------------------------------------
+------------- Featured Post Styling -------------
+-------------------------------------------------*/
+
+.tt-featured-content {
+	display: flex;
+	flex-direction: column-reverse;
+	font-family: Montserrat, sans-serif;
+}
+
+.tt-featured-content h3 {
+	font-size: 1.625rem;
+	line-height: 1.3;
+	margin-bottom: 0.5rem;
+}
+
+.tt-featured-content a {
+	color: #2D7ABB;
+}
+
+.tt-featured-content .tt-byline {
+	color: #37374B;
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+}
+
+.tt-featured-content .tt-excerpt p {
+	font-size: 1.25rem;
+	margin-bottom: 1.25rem;
+	line-height: 1.3;
+}
+
+.tt-featured-content .tt-post-item {
+	box-shadow: none;
+	padding: 0;
+}
+
+.tt-featured-image {
+	margin-bottom: 2rem;
+}
+
+.tt-featured-image img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 768px) {
+	.tt-featured-content {
+		flex-direction: row;
+		align-items: center;
+	}
+	
+	.tt-featured-image {
+		width: 100%;
+		max-width: 500px;
+		margin-left: 3rem;
+	}
+}
+
+/*------------------------------------------------
+------------- Blog Block Styling -------------
+-------------------------------------------------*/
+
+.tt-block--blog h2,
+.tt-block--blog p {
+	color: #ffffff;
+}
+
+.tt-blog-promo {
+	display: flex;
+}
+
+.tt-blog-promo-content .tt-block-header--trim {
+	max-width: 75%;
+}
+
+.tt-blog-promo-image {
+	display: none;
+}
+
+.tt-blog-cta {
+	margin-top: 1rem;
+}
+
+.tt-blog-posts {
+	color: #fff;
+	padding-top: 1rem;
+}
+
+.tt-post-item {
+	margin-top: 1rem;
+	padding: 1rem;
+	background: #fff;
+	border-radius: 0.75rem;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);=
+}
+
+.tt-blog-posts h3 {
+	font-size: 1.625rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.tt-post-image {
+	margin-bottom: 1rem;
+}
+
+.tt-post-title {
+	font-size: 1.625rem;
+	line-height: 1.1;
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 1.25rem;
+}
+
+.tt-post-image img {
+	width: 100%;
+	height: 11.25rem;
+	object-fit: cover;
+	border-radius: 0.5rem;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tt-post-tags {
+	font-size: 1rem;
+	line-height: 1.1;
+	font-family: Montserrat, sans-serif;
+	color: #000;
+}
+
+.tt-post-tags a {
+	color: #000;
+}
+
+@media only screen and (min-width: 1024px) {
+	.tt-blog-promo-image {
+		display: block;
+	}
+	
+	.tt-blog-posts {
+		padding: 0 6rem;
+	}
+}
+
+/*------------------------------------------------
+------------- Pricing Styling -------------
+-------------------------------------------------*/
+
+.tt-pricing {
+	padding: 0 6rem;
+}
+
+.tt-pricing-content,
+.tt-pricing-content p,
+.tt-pricing-content ul {
+	font-family: Montserrat, sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	margin-bottom: 1.25rem;
+}
+
+.tt-pricing-content li {
+	display: flex;
+	align-items: center;
+}
+
+.tt-pricing-content li span {
+	height: 1.25rem;
+	width: 1.25rem;
+	background: #3FA9F5;
+	display: block;
+	margin-right: 0.75rem;
+	position: relative;
+}
+
+.tt-pricing-content li span:before {
+	content: ' ';
+	height: 0.85rem;
+	width: 0.5rem;
+	border-bottom: 3px solid #fff;
+	border-right: 3px solid #fff;
+	position: absolute;
+	transform: rotate(45deg);
+	left: 0.35rem;
+	top: 0.125rem;
+}
+
+.tt-pricing-options {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.tt-pricing .tt-btn {
+	margin: 1rem 1rem 0;
+	text-align: center;
+}
+
+
+/*------------------------------------------------
+------------- Reviews Styling -------------
+-------------------------------------------------*/
+
+.tt-reviews {
+	padding: 0 6rem;
+}
+
+.tt-reviews-break {
+	border: none;
+	border-top: 1px solid #7441EE;
+	overflow: visible;
+	text-align: center;
+	height: 5px;
+	margin-bottom: 61px;
+}
+
+.tt-reviews-break img {
+	background: #F6F6FD;
+	content: url('/assets/images/icons/purple/beep.svg');
+	padding: 0 4px;
+	position: relative;
+	top: -21px;
+	height: 41px;
+	z-index: 10;
+}
+
+.tt-review-copy {
+	font-size: 2rem;
+	line-height: 1.3;
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 1.5rem;
+}
+
+.tt-review-credit {
+	font-family: Montserrat, sans-serif;
+	font-size: 1.25rem;
+	padding: 0 1rem;
+}
+
+.tt-reviews .owl-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+
+.tt-reviews .owl-dot {
+	margin: 0 0.5rem;
+}
+
+.tt-reviews .owl-dot span {
+	display: block;
+	height: 25px;
+	width: 25px;
+	background: #C4C4C4;
+	border-radius: 0.5rem;
+}
+
+.tt-reviews .owl-dot.active span {
+	background: #3FA9F5;
+}
+
+/*------------------------------------------------
+------------- Product Styling -------------
+-------------------------------------------------*/
+
+.tt-product {
+	margin-bottom: 4rem;
+}
+
+.tt-product a {
+	color: #2D7ABB;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.tt-product-image {
+	margin-bottom: 2rem;
+}
+
+.tt-product-image img {
+	height: 200px;
+	max-width: 100%;
+	object-fit: contain;
+	border-radius: 20px;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);\
+}
+
+.tt-product-details {
+	font-family: Montserrat;
+	font-size: 1.25rem;
+	line-height: 1.4;
+}
+
+.tt-product-title {
+	font-size: 1.625rem;
+	margin-bottom: 0.75rem;
+}
+
+.tt-product-description {
+	margin-bottom: 0.75rem;
+	max-width: 85%;
+}
+
+/*------------------------------------------------
+------------- Features Styling -------------
+-------------------------------------------------*/
+
+.tt-features {
+  font-family: Montserrat;
+}
+
+.tt-features .col-12 {
+  margin-bottom: 2rem;
+}
+
+.tt-features-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #00ABFC;
+  width: 3.75rem;
+  height: 3.5rem;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+.tt-features-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.tt-features-text {
+  color: #37374B;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+@media only screen and (min-width: 767px) {
+  .tt-features-title {
+    margin-top: 0;
+  }
+}
+
+/*------------------------------------------------
+------------- Breadcrumb Styling -------------
+-------------------------------------------------*/
+
+.tt-bread {
+	font-family: Montserrat;
+	padding-top: 1rem;
+}
+
+.tt-bread ul {
+	display: flex;
+}
+
+.tt-bread li {
+	margin-right: 0.5rem;
+}
+
+.tt-bread li:not(:last-child):after {
+	content: '>';
+	color: #C4C4C4;
+	margin-left: 0.5rem;
+}
+
+/*------------------------------------------------
+------------- Prose Styling -------------
+-------------------------------------------------*/
+
+.tt-prose h1 {
+	font-size: 2rem;
+	font-weight: 900;
+	margin-bottom: 0.5rem;
+}
+
+.tt-prose .tt-byline {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 1.4;
+	
+	color: #592ADF;
+	margin-bottom: 1rem;
+}
+
+.tt-prose .tt-post-tags {
+	margin-bottom: 2rem;
+}
+
+.tt-post > p:first-child {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+.tt-prose strong {
+	color: #FF00D6;
+}
+
+.tt-prose blockquote {
+	border-top: 1px solid #7441EE;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 4rem 0 0;
+	margin-top: 4rem;
+	position: relative;
+}
+
+.tt-prose blockquote:after {
+	content: ' ';
+	height: 76px;
+	width: 76px;
+	padding: 0 10px;
+	background-color: #fff;
+	background-image: url(/assets/images/icons/purple/beep.svg);
+	background-repeat: no-repeat;
+	background-size: 55px;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-top: -38px;
+}
+
+.tt-post p, .tt-post ul, .tt-post ol, .tt-post blockquote {
+	font-size: 1.25rem;
+	line-height: 1.3;
+	margin-bottom: 2rem;
+}
+
+.tt-image {
+	margin-bottom: 3rem;
+}
+
+.tt-image img {
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+	border-radius: 1.25rem;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.tt-caption {
+	text-align: right;
+	font-family: Montserrat;
+	font-size: 0.875rem;
+}
+
+@media only screen and (min-width: 1100px) {
+	.tt-prose h1 {
+		font-size: 4.375rem;
+	}
+	
+	.tt-prose .tt-post {
+		padding: 0 10%;
+	}
+}
+
+/*------------------------------------------------
+------------- Hero Styling -------------
+-------------------------------------------------*/
+
+.tt-hero {
+  display: flex;
+  align-items: center;
+}
+
+.tt-hero h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.tt-hero p {
+  font-size: 1rem;
+}
+
+.tt-hero-cta {
+  margin-top: 2.5rem;
+}
+
+.tt-hero-screen img {
+  max-width: 240px;
+  margin: 2rem 0 0;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 767px) {
+  .tt-hero h1 {
+    font-size: 3.375rem;
+  }
+  
+  .tt-hero p {
+    font-size: 1.5rem;
+  }
+  
+  .tt-hero-screen img {
+    margin: 0 auto;
+    max-width: 342px;
+    width: 100%;
+  }
+  
+  .tt-block--hero {
+    background-position: right 0%;
+    background-size: 50%;
+  }
+  
+  .tt-hero-screen {
+    text-align: center;
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .tt-block--hero:after {
+    position: absolute;
+    content: ' ';
+    right: 0;
+    top: 55%;
+    height: 55%;
+    width: 45%;
+    background-image: url(/assets/images/check-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 150% top;
+    background-size: auto 100%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .tt-hero h1 {
+    font-size: 4.375rem;
+  }
+  
+  .tt-block--hero:after {
+    right: -10px;
+    top: 45%;
+    height: 80%;
+    width: 35%;
+    background-size: contain;
+  }
+}
+
+/*------------------------------------------------
+------------- Hero Version 2 Styling -------------
+-------------------------------------------------*/
 
 .hero-2 {
 	text-align: center;
