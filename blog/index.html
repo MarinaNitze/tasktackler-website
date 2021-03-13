@@ -64,7 +64,7 @@ description: The blog
                 <div class="tt-post-item">
                   <div class="tt-post-image"><a class="tt-post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="/assets/images/posts/{{ post.featured_image }}" alt="{{ post.title }}" /></a></div>
                   <div class="tt-post-title"><a class="tt-post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
-                  <div class="tt-post-tags">Topics: {{ post | tags }}</div>
+                  <div class="tt-post-tags">{{ post.description }}</div>
                 </div>
               </li>
               {% endfor %}
