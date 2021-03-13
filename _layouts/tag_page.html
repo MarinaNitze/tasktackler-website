@@ -1,13 +1,47 @@
 ---
 layout: default
+title: TaskTackler Blog Posts by Tag
 ---
-<h2>{{ page.tag }}</h2>
-<ul>
-{% for post in page.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>
-{% endfor %}
-</ul>
 
-<div id="tag-cloud">
-  {{ site | tag_cloud }}
+<div id="main" class="main tt-main">
+  <div class="container container-xl">
+    <div class="tt-bread">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>Blog Posts by Tag</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tt-block tt-block--post wow fadeIn">
+    <div class="container container-xl">
+      <div class="tt-prose">
+        <h1>{{ page.tag }}</h1>
+      </div>
+      
+      <div class="tt-block tt-block--featured wow fadeInDown row"><!-- Block Section-->
+        <div class="container container-xl">
+          <div class="tt-block-header">
+            <div>
+              <img src="/assets/images/icons/light/completed.svg" />
+            </div>
+            <div class="tt-block-header--trim">
+              <h2>Matching Posts</h2>
+            </div>
+          </div>
+          <div class="tt-featured-content">
+            <ul class="tt-post-list tt-post-list--promo row">
+              {% for post in page.posts %}
+              <li class="col-md-4">
+                <div class="tt-post-item">
+                  <div class="tt-post-image"><a class="tt-post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="/assets/images/posts/{{ post.featured_image }}" alt="{{ post.title }}" /></a></div>
+                  <div class="tt-post-title"><a class="tt-post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+                  <div class="tt-post-tags">{{ post.description }}</div>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div><!-- Block End -->
+    </div>
 </div>
