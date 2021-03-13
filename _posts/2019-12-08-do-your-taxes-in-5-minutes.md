@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Do Your Taxes in 5 Minutes"
-description: "The Type-A way to organizing your income and receipts."
+description: "The Type-A way to organize your income and receipts."
 date: 2019-12-08
 author: Marina Nitze
 featured_image: taxes.jpg
