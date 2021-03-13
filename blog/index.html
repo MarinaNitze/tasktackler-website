@@ -39,7 +39,6 @@ description: The blog
               <h3><a href="{{ featured_post.url }}" title="{{ post.title }}">{{ featured_post.title }}</a></h3>
               <div class="tt-byline">By {{ featured_post.author }}</div>
               <div class="tt-excerpt">{{ featured_post.content | truncate: 140 }}</div>
-              <div class="tt-tags">Topics: {{ featured_post | tags }}</div>
             </div>
             <div class="tt-featured-image">
               <img src="/assets/images/posts/{{ featured_post.featured_image }}" alt="{{ featured_post.title }}" />
