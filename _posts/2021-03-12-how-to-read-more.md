@@ -29,7 +29,7 @@ Here’s some ideas:
 * You want to grow certain skills (e.g. business leadership)
 * You want to enjoy the pleasure of reading more often
 
-**Now, set your targets**
+###Now, set your targets
 
 >Rephrase your motivations into actionable targets. Assign each target a tier to indicate its priority in your life. (If you use TaskTackler, the tiers are 1-4 for current priorities, and Someday to capture targets that you eventually want to accomplish but don’t have capacity for right now). Be specific!
 
@@ -44,7 +44,7 @@ Examples could be:
 * Be a more resilient leader at work
 * Read for fun
 
-**Act on your targets with tasks**
+###Act on your targets with tasks
 
 Now that you’ve outlined your targets, it’s time to come up with specific, actionable tasks to accomplish them.
 
